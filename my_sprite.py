@@ -10,13 +10,13 @@ class my_sprite:
         self.width = self.image.get_width()
         self.height = self.image.get_height()
     def __eq__(self,other): 
-       if isinstance(other,self):
+          
           if other.loc == self.loc and other.width == self.width and other.height== self.height : 
              return True 
           return False 
-
-
-       
+    
+    def get_location(self):
+       return self.loc   
     def get_image(self):
       return self.image
     def get_width(self):
